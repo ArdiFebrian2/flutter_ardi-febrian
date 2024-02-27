@@ -6,5 +6,5 @@ void main() {
 
   // Menyambungkan nilai dari 3 variabel dan menampilkannya di layar
   String gabungan = var1 + var2 + var3;
-  print(gabungan); // Output: Hello World
+  print(gabungan); // Output: Hello Ardi Febrian
 }
