@@ -24,5 +24,5 @@ void main() async {
   List<int> result = await multiplyList(data, multiplier);
 
   // Cetak hasil
-  print(result); // Output: [2, 4, 6, 8, 10]
+  print(result);
 }

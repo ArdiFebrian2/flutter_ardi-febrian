@@ -1,6 +1,7 @@
 // Fungsi getGrade menerima parameter nilai dan mengembalikan string berdasarkan kriteria nilai.
 String getGrade(int nilai) {
   // Jika nilai lebih besar dari 70, maka kembali "Nilai A".
+  // menggunakan struktrur kontrol if else
   if (nilai > 70) {
     return "Nilai A";
   }
