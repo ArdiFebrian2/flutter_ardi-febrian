@@ -1,5 +1,6 @@
 import 'dart:io';
 
+//digunakan untuk memberikan akses kepada fungsi
 void main() {
   const rows = 8;
 

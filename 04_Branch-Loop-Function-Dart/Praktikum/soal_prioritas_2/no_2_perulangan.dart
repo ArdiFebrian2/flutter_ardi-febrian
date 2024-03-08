@@ -1,5 +1,6 @@
 import 'dart:io';
 
+//digunakan untuk memberikan akses kepada fungsi
 void main() {
   int tinggi = 6; // Tinggi jam pasir
 
