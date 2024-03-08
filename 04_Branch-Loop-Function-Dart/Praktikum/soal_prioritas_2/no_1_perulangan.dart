@@ -15,7 +15,6 @@ void main() {
       stdout.write("*");
     }
 
-    // Pindah ke baris berikutnya
     stdout.write("\n");
   }
 }
