@@ -6,6 +6,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     // Anda harus menambahkan parameter context di dalam method build
     return MaterialApp(
+      theme: ThemeData.dark().copyWith(
+        // Tema Gelap keseluruhan
+        scaffoldBackgroundColor: Colors.black,
+      ),
       home: HomePage(),
     );
   }
