@@ -10,7 +10,7 @@ flutter:
     - assets/fonts/
 ```
 
-2.Penggunaan Gambar:
+2.Penggunaan Images:
 Gambar adalah aset visual yang penting dalam pengembangan aplikasi Flutter. Mereka termasuk grafis, foto, ikon, dan lainnya, yang diperlukan untuk memperindah antarmuka pengguna (UI) dan meningkatkan pengalaman pengguna. Dalam Flutter, gambar dapat dimuat menggunakan widget Image.asset() atau Image.network() tergantung dari mana gambar itu berasal, apakah dari sumber lokal atau dari internet.
 Contohnya:
 ```dart
