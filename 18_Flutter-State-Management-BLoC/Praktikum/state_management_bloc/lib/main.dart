@@ -1,4 +1,3 @@
-// main.dart
 
 import 'package:flutter/material.dart';
 import 'screens/contact_screen.dart';

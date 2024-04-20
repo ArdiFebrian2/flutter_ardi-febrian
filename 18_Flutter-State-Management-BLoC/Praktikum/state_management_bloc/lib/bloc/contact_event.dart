@@ -1,4 +1,3 @@
-// lib/bloc/contact_event.dart
 
 abstract class ContactEvent {}
 
