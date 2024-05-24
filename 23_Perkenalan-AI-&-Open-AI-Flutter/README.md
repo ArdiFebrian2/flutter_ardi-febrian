@@ -1,4 +1,4 @@
-### Perkenalan AI & Open AI Flutter
+## Perkenalan AI & Open AI Flutter
 
 Artificial Intelligence (AI) atau kecerdasan buatan adalah bidang ilmu komputer yang berfokus pada penciptaan sistem yang dapat melakukan tugas yang biasanya membutuhkan kecerdasan manusia. AI dapat dikategorikan menjadi beberapa jenis, yaitu:
 
