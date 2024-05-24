@@ -1,0 +1,85 @@
+link gdocs:https://docs.google.com/document/d/1VmAmzDEkB-djYe86oVHCxXST9KTzn_6gs_yfpi-kbNk/edit
+
+Input:
+Jelaskan proses otentikasi pengguna menggunakan Firebase Authentication dalam aplikasi Flutter dan langkah-langkah yang diperlukan untuk mengimplementasikannya
+
+Output:
+Firebase Authentication menyediakan infrastruktur backend yang aman untuk otentikasi pengguna dalam aplikasi Flutter. Berikut adalah langkah-langkah umum yang diperlukan untuk mengim
+plementasikannya:
+
+1.Persiapan Firebase Project:
+  -Buat proyek Firebase baru di konsol Firebase (https://console.firebase.google.com/).
+  -Tambahkan aplikasi Flutter Anda ke proyek Firebase Anda dengan mengikuti instruksi yang diberikan oleh konsol Firebase.
+  -Unduh file google-services.json dan simpan di dalam proyek Flutter Anda di dalam direktori android/app.
+
+2. Instalasi Firebase SDK:
+  -Tambahkan Firebase SDK ke file pubspec.yaml di Flutter Anda. Pastikan Anda menggunakan versi yang terbaru.
+  dependencies:
+  flutter:
+  sdk: flutter
+  firebase_core: ^1.0.0 
+  firebase_auth: ^3.1.0 
+
+3.Inisialisasi Firebase:
+  - Inisialisasikan Firebase di dalam aplikasi Flutter Anda. Ini biasanya dilakukan di dalam main.dart
+  import 'package:flutter/material.dart';
+  import 'package:firebase_core/firebase_core.dart';
+  void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+  }
+
+4.Otentikasi Pengguna:
+  -Anda dapat menggunakan berbagai metode otentikasi yang disediakan oleh Firebase Authentication, seperti email dan kata sandi, Google Sign-In, Facebook Login, dll. Berikut adalah contoh penggunaan email dan kata sandi:
+  import 'package:firebase_auth/firebase_auth.dart';
+  void signInWithEmailPassword(String email, String password) async {
+  try {
+  UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+  email: email,
+  password: password,
+  );
+  User user = userCredential.user;
+  // Pengguna berhasil masuk
+  } catch (e) {
+    print("Error: $e");
+    // Penanganan kesalahan
+  }
+  }
+
+5.Penanganan Status Otentikasi:
+  -Anda dapat memantau status otentikasi pengguna dengan mendengarkan perubahan menggunakan listener yang disediakan oleh Firebase Authentication.
+  FirebaseAuth.instance.authStateChanges().listen((User user) {
+  if (user == null) {
+  // Pengguna tidak masuk
+  } else {
+    // Pengguna masuk
+  }
+  });
+
+
+6.Penanganan Keluar:
+  -Tambahkan fungsi untuk keluar dari sesi pengguna
+  void signOut() async {
+  await FirebaseAuth.instance.signOut();
+  // Keluar berhasil
+  }
+
+
+7.UI dan Feedback:
+  -Pastikan untuk memberikan umpan balik yang sesuai kepada pengguna, baik itu kesuksesan masuk, kesalahan otentikasi, atau pesan yang mengkonfirmasi keluar.
+
+Ini adalah langkah-langkah dasar untuk mengimplementasikan otentikasi pengguna menggunakan Firebase Authentication dalam aplikasi Flutter.
+Pastikan untuk membaca dokumentasi resmi Firebase dan Flutter untuk informasi lebih lanjut dan detail implementasi.
+
+
+
+
+
+
+	
+
+
+
+
+
