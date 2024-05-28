@@ -19,6 +19,6 @@ Keuntungan MVVM dalam pengembangan Flutter termasuk:
 
 - Pemisahan Kode: Dengan memisahkan tugas-tugas antara Model, View, dan ViewModel, pengembang dapat lebih mudah mengelola kode aplikasi dan memperbaiki atau memperbarui bagian-bagian tertentu tanpa mengganggu yang lain.
 
--Pengujian yang Efisien: Dikarenakan ViewModel tidak langsung bergantung pada View, pengujian ViewModel dapat dilakukan secara terpisah dengan menggunakan pengujian unit, tanpa memerlukan interaksi dengan UI.
+- Pengujian yang Efisien: Dikarenakan ViewModel tidak langsung bergantung pada View, pengujian ViewModel dapat dilakukan secara terpisah dengan menggunakan pengujian unit, tanpa memerlukan interaksi dengan UI.
 
 Dengan implementasi yang tepat, MVVM dapat membantu menghasilkan aplikasi Flutter yang bersih, terorganisir, dan mudah di-maintain, dengan pemisahan yang jelas antara logika bisnis dan tampilan pengguna.
